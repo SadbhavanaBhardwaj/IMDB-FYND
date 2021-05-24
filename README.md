@@ -16,8 +16,7 @@ If docker and docker-compose are installed in the system, run the below command 
 Run the below commands before hitting APIs
 
 
-1. 
-```pip3 install -r requirements.txt```
+1. ```pip3 install -r requirements.txt```
 
 2. ```python3 manage.py migrate```
 
@@ -31,23 +30,23 @@ Run the below commands before hitting APIs
 
 
 ---------
-APIs
+**APIs**
 
 
 
 1. User Registration
     End Point: http://127.0.0.1:8000/api/users/register/
     - POST request:  normal user: request body:
-        {
+        ```{
             "email": "email@email.com", 
             "password": "pswd", 
             "pswd2": "pswd",    
             "first_name": "first",  
             "last_name": "last",    
             "username": "first_user"    
-        }
+        }```
     - POST request:  if admin: request body(add group: "ADMIN" in the body): 
-        {
+        ```{
             "email": "email@email.com",
             "password": "pswd",
             "pswd2": "pswd",
@@ -55,7 +54,7 @@ APIs
             "last_name": "last",
             "group": "ADMIN",
             "username": "admin"
-        }
+        }```
 
 2. Get Authientication Token
     End Point: http://127.0.0.1:8000/api/users/login/ 
@@ -76,23 +75,23 @@ APIs
 
 4. Add a movie: Only accessible by admin
     End Point: http://127.0.0.1:8000/api/movies/create_movie/
-    - POST request: {
+    - POST request: ```{
             "name": "Hera Pheri",
             "popularity": 99.9,
             "director": "Director1",
             "genre": [2]
-        }
+        }```
 
 
 5. Update/ Delete a movie (Only admins):
 End Point: http://127.0.0.1:8000/api/movies/movie/<int:pk>/
-    - PUT request: {
+    - PUT request: ```{
         "name": "name1",
         "director": "director1",
         "popularity": 88.9,
         "imdb_score": 8.9,
         "genre": [1, 3]
-    }
+    }```
 
 
     - Delete request:
@@ -101,6 +100,6 @@ End Point: http://127.0.0.1:8000/api/movies/movie/<int:pk>/
 6. Rate a movie: Only authenticated users allowed
 End Point: http://127.0.0.1:8000/api/movies/movie/<int:pk>/rate/
     - POST request: request body:
-        {
+        ```{
             "score": 9
-        }
+        }```
