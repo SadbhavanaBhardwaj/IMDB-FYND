@@ -8,8 +8,7 @@ All the users will be able to see the movies list. Only the authenticated users(
 
 If docker and docker-compose are installed in the system, run the below command and directly hit the APIs
 
-1. ```
-sudo service docker start && docker-compose up -d ```
+1. ```sudo service docker start && docker-compose up -d ```
 
 
 -----------
@@ -23,12 +22,10 @@ Run the below commands before hitting APIs
 2. ```python3 manage.py migrate```
 
 3. Create group "ADMIN" 
-    - ```python3 manage.py loaddata scripts/groups.json
-    ```
+    - ```python3 manage.py loaddata scripts/groups.json```
 
 4. Create different Genre:
-    - ```python3 manage.py loaddata scripts/genre.json
-    ```
+    - ```python3 manage.py loaddata scripts/genre.json```
         - Note: if you want to add more genre, add them in the scripts/genre.json file 
 
 
@@ -42,12 +39,12 @@ APIs
     End Point: http://127.0.0.1:8000/api/users/register/
     - POST request:  normal user: request body:
         {
-            "email": "email@email.com",
-            "password": "pswd",
-            "pswd2": "pswd",
-            "first_name": "first",
-            "last_name": "last",
-            "username": "first_user"
+            "email": "email@email.com", 
+            "password": "pswd", 
+            "pswd2": "pswd",    
+            "first_name": "first",  
+            "last_name": "last",    
+            "username": "first_user"    
         }
     - POST request:  if admin: request body(add group: "ADMIN" in the body): 
         {
