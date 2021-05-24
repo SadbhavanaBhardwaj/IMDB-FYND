@@ -44,7 +44,8 @@ Run the below commands before hitting APIs
             "first_name": "first",  
             "last_name": "last",    
             "username": "first_user"    
-        }```
+        }
+        ```
     - POST request:  if admin: request body(add group: "ADMIN" in the body): 
         ```{
             "email": "email@email.com",
@@ -54,7 +55,8 @@ Run the below commands before hitting APIs
             "last_name": "last",
             "group": "ADMIN",
             "username": "admin"
-        }```
+        }
+        ```
 
 2. Get Authientication Token
     End Point: http://127.0.0.1:8000/api/users/login/ 
@@ -76,7 +78,8 @@ Run the below commands before hitting APIs
 
 4. Add a movie: Only accessible by admin
     End Point: http://127.0.0.1:8000/api/movies/create_movie/
-    - POST request: ```{
+    - POST request: 
+        ```{
             "name": "Hera Pheri",
             "popularity": 99.9,
             "director": "Director1",
@@ -87,14 +90,15 @@ Run the below commands before hitting APIs
 
 5. Update/ Delete a movie (Only admins):
 End Point: http://127.0.0.1:8000/api/movies/movie/<int:pk>/
-    - PUT request: ```{
-        "name": "name1",
-        "director": "director1",
-        "popularity": 88.9,
-        "imdb_score": 8.9,
-        "genre": [1, 3]
-    }
-    ```
+    - PUT request: 
+        ```{
+            "name": "name1",
+            "director": "director1",
+            "popularity": 88.9,
+            "imdb_score": 8.9,
+            "genre": [1, 3]
+        }
+        ```
 
 
     - Delete request:
