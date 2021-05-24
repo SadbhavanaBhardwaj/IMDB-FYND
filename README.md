@@ -37,7 +37,8 @@ Run the below commands before hitting APIs
 1. User Registration
     End Point: http://127.0.0.1:8000/api/users/register/
     - POST request:  normal user: request body:
-        ```{
+        ```
+        {
             "email": "email@email.com", 
             "password": "pswd", 
             "pswd2": "pswd",    
@@ -47,7 +48,8 @@ Run the below commands before hitting APIs
         }
         ```
     - POST request:  if admin: request body(add group: "ADMIN" in the body): 
-        ```{
+        ```
+        {
             "email": "email@email.com",
             "password": "pswd",
             "pswd2": "pswd",
@@ -61,7 +63,8 @@ Run the below commands before hitting APIs
 2. Get Authientication Token
     End Point: http://127.0.0.1:8000/api/users/login/ 
     - POST request: request body: 
-        ```{
+        ```
+        {
             "username": "first_user",
             "password": "pswd"
         }
@@ -79,7 +82,8 @@ Run the below commands before hitting APIs
 4. Add a movie: Only accessible by admin
     End Point: http://127.0.0.1:8000/api/movies/create_movie/
     - POST request: 
-        ```{
+        ```
+        {
             "name": "Hera Pheri",
             "popularity": 99.9,
             "director": "Director1",
@@ -91,7 +95,8 @@ Run the below commands before hitting APIs
 5. Update/ Delete a movie (Only admins):
 End Point: http://127.0.0.1:8000/api/movies/movie/<int:pk>/
     - PUT request: 
-        ```{
+        ```
+        {
             "name": "name1",
             "director": "director1",
             "popularity": 88.9,
@@ -107,7 +112,8 @@ End Point: http://127.0.0.1:8000/api/movies/movie/<int:pk>/
 6. Rate a movie: Only authenticated users allowed
 End Point: http://127.0.0.1:8000/api/movies/movie/<int:pk>/rate/
     - POST request: request body:
-        ```{
+        ```
+        {
             "score": 9
         }
         ```
