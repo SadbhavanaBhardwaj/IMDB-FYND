@@ -1,0 +1,30 @@
+[
+    {
+        "model": "movies.genre",
+        "pk": 1,
+        "fields": {
+              "name": "Horror"
+        }
+    },
+    {
+        "model": "movies.genre",
+        "pk": 2,
+        "fields": {
+              "name": "Comedy"
+        }
+    },
+    {
+        "model": "movies.genre",
+        "pk": 3,
+        "fields": {
+              "name": "Drama"
+        }
+    },
+    {
+        "model": "movies.genre",
+        "pk": 4,
+        "fields": {
+              "name": "Thriller"
+        }
+    }
+]

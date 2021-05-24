@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  web:
+    build: 
+      context: /home/sadbhavana/phaltu/IMDB/IMDB-FYND/
+      dockerfile: /home/sadbhavana/phaltu/IMDB/IMDB-FYND/scripts/Dockerfile
+    command: gunicorn imdb.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - /home/sadbhavana/phaltu/IMDB/IMDB-FYND/logs/:/imdb-service/imdb/logs
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
