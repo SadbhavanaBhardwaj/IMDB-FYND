@@ -71,7 +71,7 @@ Run the below commands before hitting APIs
         ```
 
 3. Get List of Movies:
-    End Point: http://127.0.0.1:8001/api/movies/get_movies/?name="Hera"
+    End Point: http://127.0.0.1:8000/api/movies/get_movies/?name="Hera"
     - GET request:  
     - if name is included in the parameters, then the search will include all the movies containing the value of the search param
     - gives paginated reponse. 10 movies per page
