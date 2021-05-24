@@ -81,7 +81,8 @@ Run the below commands before hitting APIs
             "popularity": 99.9,
             "director": "Director1",
             "genre": [2]
-        }```
+        }
+        ```
 
 
 5. Update/ Delete a movie (Only admins):
@@ -92,7 +93,8 @@ End Point: http://127.0.0.1:8000/api/movies/movie/<int:pk>/
         "popularity": 88.9,
         "imdb_score": 8.9,
         "genre": [1, 3]
-    }```
+    }
+    ```
 
 
     - Delete request:
@@ -103,4 +105,5 @@ End Point: http://127.0.0.1:8000/api/movies/movie/<int:pk>/rate/
     - POST request: request body:
         ```{
             "score": 9
-        }```
+        }
+        ```
