@@ -59,10 +59,11 @@ Run the below commands before hitting APIs
 2. Get Authientication Token
     End Point: http://127.0.0.1:8000/api/users/login/ 
     - POST request: request body: 
-        {
+        ```{
             "username": "first_user",
             "password": "pswd"
         }
+        ```
 
 3. Get List of Movies:
     End Point: http://127.0.0.1:8001/api/movies/get_movies/?name="Hera"
