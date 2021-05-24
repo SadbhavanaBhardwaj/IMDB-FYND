@@ -9,8 +9,7 @@ All the users will be able to see the movies list. Only the authenticated users(
 If docker and docker-compose are installed in the system, run the below command and directly hit the APIs
 
 1. ```
-sudo service docker start && docker-compose up -d
-```
+sudo service docker start && docker-compose up -d ```
 
 
 -----------
@@ -18,11 +17,10 @@ sudo service docker start && docker-compose up -d
 Run the below commands before hitting APIs
 
 
-1. ```pip3 install -r requirements.txt
-```
+1. 
+```pip3 install -r requirements.txt```
 
-2. ```python3 manage.py migrate
-```
+2. ```python3 manage.py migrate```
 
 3. Create group "ADMIN" 
     - ```python3 manage.py loaddata scripts/groups.json
@@ -78,7 +76,6 @@ APIs
 
 
 
------------aadha aadha hai neeche vala----------------change 99popularity in serializer--------------
 
 4. Add a movie: Only accessible by admin
     End Point: http://127.0.0.1:8000/api/movies/create_movie/
